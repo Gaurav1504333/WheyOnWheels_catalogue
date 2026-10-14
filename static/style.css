@@ -419,6 +419,8 @@ html{scroll-behavior:auto}
 
 /* ===== Mobile fix: nutrition section only (phones) ===== */
 @media (max-width: 640px) {
+  .float-label label-top{ padding-bottom: 10px}
+  .float-label label-bottom { padding-top: 10px}
   /* main cause: a plain 1fr column can't shrink below its widest content */
   .pb-nutrition .nutrition-layout { grid-template-columns: minmax(0, 1fr); }
   .pb-nutrition .nutrition-ingredients,
