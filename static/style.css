@@ -20,7 +20,36 @@
 /* Footer structure/content is retained; only its spacing is harmonised with this landing page. */
 .pb-homepage .site-footer{margin-top:0;background:#1c181f;border-top:1px solid #302633}.pb-homepage .footer-bottom{font-family:'Adieu',sans-serif}
 @media(max-width:900px){.pb-hero{min-height:auto;padding:100px 6vw 90px;grid-template-columns:1fr  .8fr;gap:0}.pb-hero-art{height:430px}.pb-sachet-hero{transform:rotate(-7deg) scale(.82)}.label-top{right:-2%}.label-bottom{left:-2%}.pb-hero-proof{gap:8px}.flavour-visual{height:250px}.flavour-card-copy{padding:0 18px 23px}.nutrition-layout{gap:28px}.use-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.pb-story-inner{gap:5vw}.story-stamp{width:210px;height:210px}}
-@media(max-width:640px){.pb-hero{display:flex;flex-direction:column;align-items:stretch;padding:76px 23px 74px;gap:0}.pb-hero-copy{order:1}.pb-hero h1{font-size:clamp(46px,13vw,72px)}.pb-hero-description{font-size:12px;line-height:1.8;margin:20px 0 23px!important}.pb-hero-actions{gap:18px}.pb-button{padding:14px 14px;gap:15px;font-size:10px}.pb-hero-proof{margin-top:28px;font-size:7px;gap:7px}.pb-hero-art{order:2;height:370px;margin-top:18px}.pb-sachet-hero{transform:rotate(-7deg) scale(.78)}.pb-orbit-one{width:300px}.pb-orbit-two{width:240px}.label-top{top:25px;right:0;font-size:7px}.label-bottom{bottom:25px;left:0;font-size:7px}.peanut-one{left:4%;top:58px}.peanut-two{right:3%;bottom:53px}.peanut-three{right:6%;top:83px}.scroll-cue{left:23px;bottom:20px;font-size:7px}.section-wrap{padding:75px 20px}.section-heading{margin-bottom:35px}.section-heading h2,.story-copy h2,.pb-final-cta h2{font-size:38px}.section-heading>p:not(.eyebrow){font-size:11px}.flavour-grid{grid-template-columns:1fr;gap:15px}.flavour-card{display:grid;grid-template-columns:.85fr 1fr;min-height:230px}.flavour-number{top:15px;left:14px;font-size:7px}.flavour-visual{height:100%;min-height:230px}.flavour-sachet{transform:rotate(-5deg) scale(.83)}.flavour-card-copy{align-self:center;padding:36px 14px 18px 0}.flavour-card h3{font-size:19px}.flavour-card-copy>p:not(.flavour-kicker){font-size:10px;min-height:0}.flavour-kicker{font-size:7px;line-height:1.6}.card-link{gap:8px;font-size:8px}.mockup-note{line-height:1.7}.pb-story{padding:75px 23px 0}.pb-story-inner{grid-template-columns:1fr;gap:42px;padding-bottom:65px}.story-stamp{width:155px;height:155px;font-size:23px;margin:0 auto}.story-copy h2{font-size:42px}.story-copy>p:not(.eyebrow){font-size:11px}.story-marquee{justify-content:flex-start;overflow:hidden;gap:18px;font-size:8px}.story-marquee span{flex-shrink:0}.nutrition-layout{grid-template-columns:1fr;gap:35px}.ingredient-row{grid-template-columns:27px 1fr auto;gap:10px;padding:20px 0}.ingredient-row h3{font-size:17px}.ingredient-row>strong{font-size:22px}.nutrition-panel{padding:21px}.pb-uses{padding-top:65px}.use-grid{gap:10px}.use-card{min-height:220px;padding:13px}.use-art{height:92px;font-size:19px}.use-card h3{font-size:15px}.use-card p{font-size:9px}.pb-final-cta{padding:75px 22px 80px}.pb-final-cta>p:not(.eyebrow){font-size:11px}.pb-homepage .site-footer{padding:38px 20px}.pb-homepage .footer-container{gap:24px}.pb-homepage .footer-section p,.pb-homepage footer a{font-size:10px}}
+/* Mobile fix: nutrition section clipping */
+@media (max-width: 640px) {
+  /* let the grid column shrink to the screen instead of growing to fit content */
+  .nutrition-layout { grid-template-columns: minmax(0, 1fr); }
+  .nutrition-ingredients,
+  .nutrition-panel,
+  .product-facts,
+  .facts-about { min-width: 0; max-width: 100%; }
+
+  /* quick facts: two equal columns that can't overflow */
+  .facts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fact { min-width: 0; padding: 18px 8px; }
+  .fact strong { font-size: 26px; }
+  .fact span { overflow-wrap: anywhere; letter-spacing: .06em; }
+
+  /* text blocks wrap properly */
+  .facts-about p,
+  .ingredient-footnote,
+  .nutrition-disclaimer,
+  .nutrition-panel > p { overflow-wrap: anywhere; }
+
+  /* nutrition panel heading was too wide for the screen */
+  .nutrition-panel h3 { font-size: 19px; overflow-wrap: anywhere; line-height: 1.2; }
+
+  /* table fits the screen without sideways scrolling */
+  .nutrition-table { min-width: 0; width: 100%; font-size: 10px; }
+  .nutrition-table th,
+  .nutrition-table td { padding: 8px 5px; }
+  .nutrition-table th { font-size: 9px; letter-spacing: .02em; }
+}
 @media(prefers-reduced-motion:reduce){.pb-homepage *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
 /* Real sachet image + nutrition label updates */
