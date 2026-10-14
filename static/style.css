@@ -416,3 +416,38 @@ html{scroll-behavior:auto}
 @media(min-width:901px){
 .pb-hero{min-height:0;padding-top:46px;padding-bottom:90px}
 }
+
+/* ===== Mobile fix: nutrition section only (phones) ===== */
+@media (max-width: 640px) {
+  /* main cause: a plain 1fr column can't shrink below its widest content */
+  .pb-nutrition .nutrition-layout { grid-template-columns: minmax(0, 1fr); }
+  .pb-nutrition .nutrition-ingredients,
+  .pb-nutrition .nutrition-panel,
+  .pb-nutrition .product-facts,
+  .pb-nutrition .facts-about { min-width: 0; max-width: 100%; }
+
+  /* ingredient rows */
+  .pb-nutrition .ingredient-row { grid-template-columns: 27px minmax(0, 1fr) auto; }
+
+  /* quick facts: 2 equal columns that can't overflow */
+  .pb-nutrition .facts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pb-nutrition .fact { min-width: 0; padding: 18px 8px; }
+  .pb-nutrition .fact strong { font-size: 26px; }
+  .pb-nutrition .fact span { overflow-wrap: anywhere; letter-spacing: .06em; }
+
+  /* text wraps instead of running off-screen */
+  .pb-nutrition .facts-about p,
+  .pb-nutrition .ingredient-footnote,
+  .pb-nutrition .nutrition-disclaimer,
+  .pb-nutrition .nutrition-panel > p { overflow-wrap: anywhere; }
+
+  /* "Nutritional information" heading was wider than the screen */
+  .pb-nutrition .nutrition-panel h3 { font-size: 19px; line-height: 1.2; overflow-wrap: anywhere; }
+
+  /* table fits the screen: no 380px minimum */
+  .pb-nutrition .nutrition-table-wrap { overflow-x: hidden; }
+  .pb-nutrition .nutrition-table { min-width: 0; width: 100%; font-size: 10px; }
+  .pb-nutrition .nutrition-table th,
+  .pb-nutrition .nutrition-table td { padding: 8px 5px; }
+  .pb-nutrition .nutrition-table th { font-size: 9px; letter-spacing: .02em; }
+}
