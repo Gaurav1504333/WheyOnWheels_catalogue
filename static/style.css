@@ -428,6 +428,9 @@ html{scroll-behavior:auto}
     bottom: 0;
     left: 0;
   }
+  .section-heading h2{
+    font-size: 20px;
+  }
   /* main cause: a plain 1fr column can't shrink below its widest content */
   .pb-nutrition .nutrition-layout { grid-template-columns: minmax(0, 1fr); }
   .pb-nutrition .nutrition-ingredients,
