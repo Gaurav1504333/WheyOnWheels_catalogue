@@ -419,7 +419,7 @@ html{scroll-behavior:auto}
 
 /* ===== Mobile fix: nutrition section only (phones) ===== */
 @media (max-width: 640px) {
-  .pb-hero-art.pb-hero-product { height: 440px; }          /* more room above/below the sachets */
+  .pb-hero-art.pb-hero-product { height: 350px; }          /* more room above/below the sachets */
   .pb-hero-product .label-top    { top: 0;    bottom: auto; right: 0; }
   .pb-hero-product .label-bottom { bottom: 0; top: auto;    left: 0;  }
   /* main cause: a plain 1fr column can't shrink below its widest content */
