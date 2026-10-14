@@ -419,8 +419,6 @@ html{scroll-behavior:auto}
 
 /* ===== Mobile fix: nutrition section only (phones) ===== */
 @media (max-width: 640px) {
-/* Mobile: increase spacing between floating labels */
-@media (max-width: 650px) {
   .pb-hero-product .float-label.label-top {
     top: 0;
     right: 0;
@@ -430,7 +428,6 @@ html{scroll-behavior:auto}
     bottom: 0;
     left: 0;
   }
-}
   /* main cause: a plain 1fr column can't shrink below its widest content */
   .pb-nutrition .nutrition-layout { grid-template-columns: minmax(0, 1fr); }
   .pb-nutrition .nutrition-ingredients,
