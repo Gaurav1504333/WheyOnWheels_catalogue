@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#151219">
+  <meta name="description" content="Meet WheyOnWheels high-protein peanut butter sachets in Cold Coffee, Chocolate Hazelnut and Tiramisu.">
+  <title>WheyOnWheels</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='logo_web.png') }}">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="pb-homepage">
+  <main>
+    <section class="pb-hero" id="top">
+      <div class="pb-hero-copy">
+        <p class="eyebrow"><span></span> YOUR DAILY FUEL, REIMAGINED</p>
+        <h1><span class="h-line"><span>RIP IT.</span></span><span class="h-line"><em>SQUEEZE IT.</em></span><span class="h-line"><span>FUEL UP.</span></span></h1>
+        <p class="pb-hero-description">Peanut butter made for life on the move. A handy single-serve sachet, three indulgent flavours, and plenty of ways to make your everyday snacks better.</p>
+        <div class="pb-hero-actions">
+          <a class="pb-button pb-button-primary" href="#flavours">Explore the flavours <span>↘</span></a>
+          <a class="pb-text-link" href="#nutrition">What's inside? <span>↓</span></a>
+        </div>
+        <div class="pb-hero-proof"><span class="proof-dot">✳</span><span>PEANUTS FIRST</span><i></i><span>WHEY PROTEIN</span><i></i><span>READY WHEN YOU ARE</span></div>
+      </div>
+      <div class="pb-hero-art pb-hero-product" aria-label="WheyOnWheels peanut butter sachets in three flavours">
+        <div class="pb-orbit pb-orbit-one"></div><div class="pb-orbit pb-orbit-two"></div>
+        <span class="float-label label-top">YOUR SNACK, UPGRADED.</span>
+        <div class="pb-sachet-fan">
+          <img class="pb-real-sachet sachet-left" src="{{ url_for('static', filename='chocolate_hazelnut.png') }}" alt="" aria-hidden="true">
+          <img class="pb-real-sachet sachet-mid" src="{{ url_for('static', filename='cold_coffee.png') }}" alt="" aria-hidden="true">
+          <img class="pb-real-sachet sachet-right" src="{{ url_for('static', filename='tiramisu.png') }}" alt="WheyOnWheels High Protein Peanut Butter sachets in Chocolate Hazelnut, Cold Coffee and Tiramisu flavours">
+        </div>
+        <span class="float-label label-bottom">RIP. SQUEEZE. GO.</span>
+      </div>
+      <a class="scroll-cue" href="#flavours"><span></span> SCROLL TO DISCOVER</a>
+    </section>
+
+    <section class="pb-flavours section-wrap" id="flavours">
+      <div class="section-heading">
+        <p class="eyebrow">THREE FLAVOURS. ZERO BORING BITES.</p>
+        <h2>Three flavours. <em>One big craving.</em></h2>
+        <p>Big peanut butter energy, with a flavour for every kind of craving.</p>
+      </div>
+      <div class="flavour-grid">
+        <article class="flavour-card flavour-coffee">
+          <div class="flavour-number">01 / THE PICK-ME-UP</div>
+          <div class="flavour-visual"><img class="flavour-sachet-img" src="{{ url_for('static', filename='cold_coffee.png') }}" alt="WheyOnWheels High Protein Peanut Butter sachet, Cold Coffee flavour"><span class="flavour-orb"></span></div>
+          <div class="flavour-card-copy"><p class="flavour-kicker">SMOOTH · ROASTED · COFFEE-KISSED</p><h3>Cold Coffee</h3><p>A rich, coffee-inspired twist for the ones who like their snack break with a little kick of flavour.</p><a href="#uses" class="card-link">Make it your own <span>↗</span></a></div>
+        </article>
+        <article class="flavour-card flavour-hazelnut">
+          <div class="flavour-number">02 / THE INDULGENT ONE</div>
+          <div class="flavour-visual"><img class="flavour-sachet-img" src="{{ url_for('static', filename='chocolate_hazelnut.png') }}" alt="WheyOnWheels High Protein Peanut Butter sachet, Chocolate Hazelnut flavour"><span class="flavour-orb"></span></div>
+          <div class="flavour-card-copy"><p class="flavour-kicker">CHOCOLATY · NUTTY · CREAMY</p><h3>Chocolate Hazelnut</h3><p>A chocolatey, nut-forward flavour for toast, oats, fruit, and those just-one-more-bite moments.</p><a href="#uses" class="card-link">Make it your own <span>↗</span></a></div>
+        </article>
+        <article class="flavour-card flavour-tiramisu">
+          <div class="flavour-number">03 / THE LITTLE LUXURY</div>
+          <div class="flavour-visual"><img class="flavour-sachet-img" src="{{ url_for('static', filename='tiramisu.png') }}" alt="WheyOnWheels High Protein Peanut Butter sachet, Tiramisu flavour"><span class="flavour-orb"></span></div>
+          <div class="flavour-card-copy"><p class="flavour-kicker">DESSERT-INSPIRED · DEEP · MOREISH</p><h3>Tiramisu</h3><p>A dessert-inspired pick for turning an everyday snack into a moment worth slowing down for.</p><a href="#uses" class="card-link">Make it your own <span>↗</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pb-story" id="about-product">
+      <div class="pb-story-inner">
+        <div class="story-stamp">GOOD<br>THINGS<br>INSIDE.</div>
+        <div class="story-copy"><p class="eyebrow">A SMALL PACK WITH A BIG JOB</p><h2>Peanut butter.<br><em>Made to move.</em></h2><p>It's the familiar goodness of peanut butter in a convenient, single-serve format. No jar to carry, no spoon to find-just open a sachet and add it to the snack you're already having.</p><p>Keep one in your gym bag, work bag, or travel kit for a quick, flavorful add-on whenever hunger hits.</p><a class="pb-button pb-button-outline" href="#uses">See how to use it <span>↘</span></a></div>
+      </div>
+      <div class="story-marquee" aria-hidden="true"><div class="marquee-track"><div class="marquee-group"><span>PEANUTS FIRST</span><b>✳</b><span>FLAVOUR ALWAYS</span><b>✳</b><span>MADE FOR MOVING</span><b>✳</b></div><div class="marquee-group"><span>PEANUTS FIRST</span><b>✳</b><span>FLAVOUR ALWAYS</span><b>✳</b><span>MADE FOR MOVING</span><b>✳</b></div><div class="marquee-group"><span>PEANUTS FIRST</span><b>✳</b><span>FLAVOUR ALWAYS</span><b>✳</b><span>MADE FOR MOVING</span><b>✳</b></div><div class="marquee-group"><span>PEANUTS FIRST</span><b>✳</b><span>FLAVOUR ALWAYS</span><b>✳</b><span>MADE FOR MOVING</span><b>✳</b></div><div class="marquee-group"><span>PEANUTS FIRST</span><b>✳</b><span>FLAVOUR ALWAYS</span><b>✳</b><span>MADE FOR MOVING</span><b>✳</b></div><div class="marquee-group"><span>PEANUTS FIRST</span><b>✳</b><span>FLAVOUR ALWAYS</span><b>✳</b><span>MADE FOR MOVING</span><b>✳</b></div></div></div>
+    </section>
+
+    <section class="pb-nutrition section-wrap" id="nutrition">
+      <div class="section-heading section-heading-left"><p class="eyebrow">LET'S TALK NUTRITION</p><h2>Know what goes <em>in.</em></h2><p>A peanut-forward blend with whey protein, built to make everyday snacking more convenient.</p></div>
+      <div class="nutrition-layout">
+        <div class="nutrition-ingredients">
+          <div class="ingredient-row"><span class="ingredient-index">01</span><div><h3>Roasted peanuts</h3><p>The nutty base of the blend.</p></div><strong>76%</strong></div>
+          <div class="ingredient-row"><span class="ingredient-index">02</span><div><h3>Butter</h3><p>For a rich, creamy texture.</p></div><strong>16%</strong></div>
+          <div class="ingredient-row"><span class="ingredient-index">03</span><div><h3>Whey protein</h3><p>Protein added to the peanut butter blend.</p></div><strong>8%</strong></div>
+          <div class="product-facts">
+            <p class="eyebrow">THE QUICK FACTS</p>
+            <div class="facts-grid">
+              <div class="fact"><strong>8 g</strong><span>Protein per sachet</span></div>
+              <div class="fact"><strong>0 g</strong><span>Added sugars</span></div>
+              <div class="fact"><strong>190</strong><span>Kcal per 32 g serving</span></div>
+              <div class="fact"><strong>2.2 g</strong><span>Dietary fibre per serving</span></div>
+            </div>
+            <div class="facts-about">
+              <h4>Why a sachet?</h4>
+              <p>Each pack is one pre-portioned 32 g serving, so there's no scooping, no mess and no jar to carry. Tear it open, squeeze it out and you're done, whether you're at your desk, in the gym or on a train.</p>
+              <h4>What makes it different?</h4>
+              <p>It's peanut butter with whey protein blended in, so you get the familiar nutty taste plus an extra protein boost in every sachet. Roasted peanuts make up the biggest share of the blend.</p>
+              <h4>Good to know</h4>
+              <p>Contains peanuts and milk-based ingredients (butter and whey protein). Please check the pack for the full ingredients list, allergen information and storage instructions before you eat.</p>
+            </div>
+          </div>
+          <p class="ingredient-footnote">Blend percentages reflect the formulation shared for this page. Confirm these against the final production recipe and label before publishing.</p>
+        </div>
+        <div class="nutrition-panel">
+          <div class="nutrition-panel-top"><span>THE NUTRITION LABEL</span><span class="nutrition-star">✳</span></div>
+          <h3>Nutritional information</h3>
+          <p>Serving size: 32 g · Approx. 1 sachet</p>
+          <div class="nutrition-table-wrap"><table class="nutrition-table">
+            <thead><tr><th>Nutrient</th><th>Per 100 g</th><th>Per serving (32 g)</th></tr></thead>
+            <tbody>
+              <tr><td>Energy</td><td>580 kcal</td><td>190 kcal</td></tr>
+              <tr><td>Protein</td><td>25.7 g</td><td>8 g</td></tr>
+              <tr><td>Carbohydrates</td><td>13 g</td><td>4.1 g</td></tr>
+              <tr><td>Total sugars</td><td>4 g</td><td>1.3 g</td></tr>
+              <tr><td>Added sugars</td><td>0 g</td><td>0 g</td></tr>
+              <tr><td>Total fat</td><td>50.7 g</td><td>16.2 g</td></tr>
+              <tr><td>Saturated fat</td><td>14 g</td><td>4.5 g</td></tr>
+              <tr><td>Trans fat</td><td>0.1 g</td><td>0 g*</td></tr>
+              <tr><td>Cholesterol</td><td>35 mg</td><td>11 mg</td></tr>
+              <tr><td>Dietary fibre</td><td>6.8 g</td><td>2.2 g</td></tr>
+              <tr><td>Sodium</td><td>30 mg</td><td>9.4 mg</td></tr>
+            </tbody>
+          </table></div>
+          <p class="nutrition-disclaimer">*Approximate values, trans fat per serving rounded to 0 g as shown in the supplied nutrition artwork. Confirm figures against the final approved label before publishing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-uses section-wrap" id="uses">
+      <div class="section-heading"><p class="eyebrow">YOUR SACHET, YOUR RULES</p><h2>More than a <em>straight-from-the-pack</em> snack.</h2><p>Keep it simple or make it part of your favourite snack ritual.</p></div>
+      <div class="use-grid">
+        <article class="use-card use-toast"><span class="use-count">01</span><div class="use-art">PB<span>+</span>TOAST</div><div><h3>Toast & sandwiches</h3><p>Spread onto toast or add to a sandwich for a nutty, flavourful bite.</p></div></article>
+        <article class="use-card use-oats"><span class="use-count">02</span><div class="use-art">SHAKE<span>↗</span></div><div><h3>Smoothies & shakes</h3><p>Squeeze into your smoothie or shake and blend until smooth.</p></div></article>
+        <article class="use-card use-fruit"><span class="use-count">03</span><div class="use-art">OATS<span>+</span>PB</div><div><h3>Oats & yogurt</h3><p>Swirl through warm oats, overnight oats, or a bowl of yogurt.</p></div></article>
+        <article class="use-card use-spoon"><span class="use-count">04</span><div class="use-art">SPOON<span>✳</span></div><div><h3>Direct spoonfuls</h3><p>Enjoy straight from the sachet or squeeze onto a spoon.</p></div></article>
+        <article class="use-card use-ricecake"><span class="use-count">05</span><div class="use-art">RICE<span>+</span>CAKE</div><div><h3>Rice cakes</h3><p>Spread over a crunchy rice cake for an easy snack on the go.</p></div></article>
+      </div>
+      <p class="use-note">Serving ideas are suggestions. Check the product label for ingredients, allergens, and storage instructions.</p>
+    </section>
+
+    <section class="pb-final-cta">
+      <p class="eyebrow">SMALL SACHET. SERIOUS CRAVING.</p><h2>Your next favourite<br><em>snack starts here.</em></h2><p>Three flavour moods. One easy-to-carry format. Which one are you trying first?</p><a class="pb-button pb-button-primary" href="mailto:wheyonwheelsmumbai@gmail.com?subject=WheyOnWheels%20Peanut%20Butter%20Sachets">Enquire about sachets <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="pb-footer">
+    <div class="pb-footer-inner">
+      <div class="pb-footer-brand">
+        <p class="pb-footer-logo">WHEYONWHEELS</p>
+        <p class="pb-footer-tagline">Your everyday healthy smoothie partner - fresh, nutritious, and delivered with care.</p>
+        <a class="pb-footer-cta" href="mailto:wheyonwheelsmumbai@gmail.com?subject=WheyOnWheels%20Peanut%20Butter%20Sachets">Enquire about sachets <span>↗</span></a>
+      </div>
+      <nav class="pb-footer-col" aria-label="Page sections">
+        <h4>Explore</h4>
+        <a href="#flavours">Flavours</a>
+        <a href="#about-product">The product</a>
+        <a href="#nutrition">Nutrition</a>
+        <a href="#uses">How to use it</a>
+      </nav>
+      <div class="pb-footer-col">
+        <h4>Contact us</h4>
+        <a href="mailto:wheyonwheelsmumbai@gmail.com">wheyonwheelsmumbai@gmail.com</a>
+        <p>Mumbai, India</p>
+      </div>
+      <div class="pb-footer-col">
+        <h4>Follow us</h4>
+        <a href="https://instagram.com/whey_on_wheels" target="_blank" rel="noopener noreferrer">Instagram <span>↗</span></a>
+      </div>
+    </div>
+    <div class="pb-footer-bottom">
+      <p>&copy; 2025 WheyOnWheels &bull; All Rights Reserved</p>
+      <p class="pb-footer-motto">PEANUTS FIRST <b>✳</b> FLAVOUR ALWAYS <b>✳</b> MADE FOR MOVING</p>
+    </div>
+  </footer>
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</body>
+</html>
