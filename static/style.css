@@ -486,7 +486,7 @@ html{scroll-behavior:auto}
 .pb-price-copy{max-width:560px}
 .pb-price-copy h2{
   margin:0 0 20px;
-  font:clamp(30px,3.8vw,50px)/1.04 'Gefika',sans-serif;
+  font:clamp(35px,4.5vw,62px)/1.04 'Gefika',sans-serif;
   letter-spacing:-.035em;
 }
 .pb-price-copy>p:not(.eyebrow){
@@ -557,7 +557,10 @@ html{scroll-behavior:auto}
 @media(max-width:700px){
   .pb-price-section{padding:75px 22px}
   .pb-price-inner{grid-template-columns:1fr;gap:38px}
-  .pb-price-copy h2{font-size:42px}
+  .pb-price-copy h2{
+    font-size:30px;
+    line-height:1.1;
+  }
   .pb-price-card{min-height:270px;padding:35px 20px}
   .pb-price-amount{font-size:88px}
 }
