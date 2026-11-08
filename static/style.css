@@ -463,3 +463,101 @@ html{scroll-behavior:auto}
   .pb-nutrition .nutrition-table td { padding: 8px 5px; }
   .pb-nutrition .nutrition-table th { font-size: 9px; letter-spacing: .02em; }
 }
+
+/* Price section */
+.pb-price-section{
+  position:relative;
+  overflow:hidden;
+  padding:105px 7vw;
+  background:
+    radial-gradient(ellipse at 78% 50%,rgba(254,105,149,.13),transparent 38%),
+    linear-gradient(135deg,#1b1620 0%,#211923 100%);
+  border-top:1px solid rgba(254,105,149,.12);
+  border-bottom:1px solid rgba(254,105,149,.12);
+}
+.pb-price-inner{
+  max-width:1120px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  align-items:center;
+  gap:8vw;
+}
+.pb-price-copy{max-width:560px}
+.pb-price-copy h2{
+  margin:0 0 20px;
+  font:clamp(38px,4.5vw,62px)/1.04 'Gefika',sans-serif;
+  letter-spacing:-.035em;
+}
+.pb-price-copy>p:not(.eyebrow){
+  max-width:450px;
+  margin:0 0 26px;
+  color:#b9b3bf;
+  font:13px/1.9 'Adieu',sans-serif;
+}
+.pb-price-card{
+  position:relative;
+  min-height:310px;
+  padding:42px 28px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  text-align:center;
+  background:linear-gradient(145deg,#29212d,#19151e);
+  border:1px solid rgba(254,105,149,.55);
+  box-shadow:0 24px 70px rgba(0,0,0,.28),inset 0 0 50px rgba(254,105,149,.045);
+}
+.pb-price-card:before,.pb-price-card:after{
+  content:'';
+  position:absolute;
+  width:180px;height:180px;
+  border:1px solid rgba(254,105,149,.15);
+  border-radius:50%;
+  pointer-events:none;
+}
+.pb-price-card:before{top:-115px;left:-85px}
+.pb-price-card:after{right:-100px;bottom:-125px;width:230px;height:230px}
+.pb-price-label,.pb-price-unit{
+  color:#c9aeba;
+  font:9px 'Adieu',sans-serif;
+  letter-spacing:.2em;
+}
+.pb-price-amount{
+  display:flex;
+  align-items:flex-start;
+  margin:13px 0 3px;
+  color:var(--pb-pink);
+  font:clamp(76px,9vw,112px)/1 'Gefika',sans-serif;
+  letter-spacing:-.06em;
+  text-shadow:0 0 38px rgba(254,105,149,.18);
+}
+.pb-price-amount .pb-rupee{
+  margin:12px 8px 0 0;
+  font:clamp(30px,3.5vw,43px)/1 'Gefika',sans-serif;
+}
+.pb-price-divider{
+  width:44px;height:1px;
+  margin:24px 0 15px;
+  background:var(--pb-pink);
+}
+.pb-price-card>p{
+  margin:0;
+  color:#e1d8e3;
+  font:11px 'Adieu',sans-serif;
+  letter-spacing:.04em;
+}
+.pb-price-spark{
+  position:absolute;
+  right:24px;top:20px;
+  color:var(--pb-pink);
+  font-size:22px;
+}
+@media(max-width:700px){
+  .pb-price-section{padding:75px 22px}
+  .pb-price-inner{grid-template-columns:1fr;gap:38px}
+  .pb-price-copy h2{font-size:42px}
+  .pb-price-card{min-height:270px;padding:35px 20px}
+  .pb-price-amount{font-size:88px}
+}
