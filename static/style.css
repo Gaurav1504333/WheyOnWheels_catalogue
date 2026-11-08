@@ -486,7 +486,7 @@ html{scroll-behavior:auto}
 .pb-price-copy{max-width:560px}
 .pb-price-copy h2{
   margin:0 0 20px;
-  font:clamp(35px,4.5vw,62px)/1.04 'Gefika',sans-serif;
+  font:clamp(30px,3.8vw,50px)/1.04 'Gefika',sans-serif;
   letter-spacing:-.035em;
 }
 .pb-price-copy>p:not(.eyebrow){
