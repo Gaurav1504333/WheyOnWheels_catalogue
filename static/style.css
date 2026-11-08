@@ -559,7 +559,6 @@ html{scroll-behavior:auto}
   .pb-price-inner{grid-template-columns:1fr;gap:38px}
   .pb-price-copy h2{
     font-size:35px;
-    line-height:1.1;
   }
   .pb-price-card{min-height:270px;padding:35px 20px}
   .pb-price-amount{font-size:88px}
