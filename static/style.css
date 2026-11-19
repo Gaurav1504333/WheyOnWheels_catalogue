@@ -2385,3 +2385,52 @@ html{scroll-behavior:auto}
         letter-spacing: -.06em;
     }
 }
+
+
+/* Nutrition section: keep the facts/content column and nutrition label side by side */
+@media (min-width: 901px) {
+  .pb-nutrition .nutrition-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, .85fr);
+    align-items: start;
+    gap: 55px;
+  }
+
+  /* The HTML currently wraps the nutrition panel inside this container.
+     display: contents lets the panel participate as the second grid column. */
+  .pb-nutrition .nutrition-ingredients {
+    display: contents;
+  }
+
+  .pb-nutrition .nutrition-layout > .ingredient-row,
+  .pb-nutrition .nutrition-layout > .product-facts {
+    grid-column: 1;
+    min-width: 0;
+  }
+
+  .pb-nutrition .nutrition-layout > .nutrition-panel {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    align-self: start;
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+/* Keep the existing stacked layout on smaller screens */
+@media (max-width: 900px) {
+  .pb-nutrition .nutrition-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .pb-nutrition .nutrition-ingredients {
+    display: block;
+    width: 100%;
+  }
+
+  .pb-nutrition .nutrition-panel {
+    width: 100%;
+  }
+}
